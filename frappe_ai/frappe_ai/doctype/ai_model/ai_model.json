@@ -1,36 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{provider_name}",
- "creation": "2026-03-31 00:50:00.940169",
+ "autoname": "format:{model_name}",
+ "creation": "2026-03-31 00:53:10.021866",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "provider_name",
-  "ai_models"
+  "model_name",
+  "section_break_pfvi",
+  "endpoint",
+  "column_break_rede",
+  "api_key"
  ],
  "fields": [
   {
-   "fieldname": "provider_name",
+   "fieldname": "model_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Provider Name",
+   "label": "Model Name",
    "reqd": 1
   },
   {
-   "fieldname": "ai_models",
-   "fieldtype": "Table MultiSelect",
-   "label": "AI Models",
-   "options": "AI Model Link"
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "endpoint",
+   "fieldtype": "Data",
+   "label": "Endpoint"
+  },
+  {
+   "fieldname": "section_break_pfvi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rede",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-31 00:57:38.186797",
+ "modified": "2026-03-31 00:55:30.301601",
  "modified_by": "Administrator",
  "module": "Frappe AI",
- "name": "AI Provider",
+ "name": "AI Model",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
